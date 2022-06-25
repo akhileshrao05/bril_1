@@ -1,0 +1,18 @@
+@main {
+  v0: int = const 10;
+  v1: int = const 5;
+  v2: int = const 0;
+  v3: int = const 1;
+  b: bool = gt v0 v1;
+  br b .greater .lesser;
+
+.greater:
+  print v3;
+  jmp .merge;
+  
+.lesser:
+  print v2;
+
+.merge:
+
+}
